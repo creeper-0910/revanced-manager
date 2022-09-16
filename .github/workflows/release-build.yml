@@ -31,6 +31,7 @@ jobs:
           SIGNING_STORE_PASSWORD: ${{ secrets.SIGNING_KEYSTORE_PASSWORD }}
         run: flutter build apk
       - name: Sign APK
+        continue-on-error: true
         id: sign_apk
         uses: r0adkll/sign-android-release@v1
         with:
@@ -40,6 +41,7 @@ jobs:
           alias: ${{ secrets.SIGNING_KEY_ALIAS }}
           keyPassword: ${{ secrets.SIGNING_KEY_PASSWORD }}
       - name: Add version to APK
+        continue-on-error: true
         run: mv ${{steps.sign_apk.outputs.signedReleaseFile}} revanced-manager-${{ env.RELEASE_VERSION }}.apk
       - name: Publish release APK
         uses: "marvinpinto/action-automatic-releases@latest"
