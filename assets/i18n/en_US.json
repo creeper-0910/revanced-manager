@@ -16,6 +16,7 @@
         "patchedSubtitle": "Patched Applications",
         "updatesAvailable": "Updates available",
         "noUpdates": "No updates available",
+        "WIP": "Work In Progress",
         "noInstallations": "No patched applications installed",
         "installed": "Installed",
         "updateDialogTitle": "Update Manager",
@@ -26,7 +27,8 @@
         "installingMessage": "Installing update...",
         "errorDownloadMessage": "Unable to download update",
         "errorInstallMessage": "Unable to install update",
-        "noConnection": "No internet connection"
+        "noConnection": "No internet connection",
+        "updatesDisabled": "Updating a patched app is currently disabled. Repatch the app again."
     },
     "applicationItem": {
         "patchButton": "Patch",
@@ -82,7 +84,8 @@
     "patchItem": {
         "unsupportedWarningButton": "Warning",
         "unsupportedDialogTitle": "Warning",
-        "unsupportedDialogText": "Selecting this patch may result in patching errors.\n\nApp version: {packageVersion}\nCurrent supported versions:\n{supportedVersions}"
+        "unsupportedDialogText": "Selecting this patch may result in patching errors.\n\nApp version: {packageVersion}\nCurrent supported versions:\n{supportedVersions}",
+        "unsupportedPatchVersion": "Patch is not supported for this app version. Enable experimental toggle in settings to proceed."
     },
     "installerView": {
         "widgetTitle": "Installer",
@@ -93,6 +96,7 @@
         "notificationTitle": "ReVanced Manager is patching",
         "notificationText": "Tap to return to the installer",
         "shareApkMenuOption": "Share APK",
+        "exportApkMenuOption": "Export APK",
         "shareLogMenuOption": "Share log",
         "installErrorDialogTitle": "Error",
         "installErrorDialogText1": "Root install is not possible with the current patches selection.\nRepatch your app or choose non-root install.",
@@ -106,6 +110,7 @@
         "teamSectionTitle": "Team",
         "infoSectionTitle": "Info",
         "advancedSectionTitle": "Advanced",
+        "logsSectionTitle": "Logs",
         "darkThemeLabel": "Dark Mode",
         "darkThemeHint": "Welcome to the Dark Side",
         "dynamicThemeLabel": "Material You",
@@ -129,8 +134,23 @@
         "apiURLLabel": "API URL",
         "apiURLHint": "Configure your custom API URL",
         "selectApiURL": "Select URL",
+        "experimentalPatchesLabel": "Experimental Patch support",
+        "experimentalPatchesHint": "Enable to use unsupported patches in any app version",
+        "enabledExperimentalPatches": "Experimental patches enabled",
         "aboutLabel": "About",
-        "snackbarMessage": "Copied to clipboard"
+        "snackbarMessage": "Copied to clipboard",
+        "sentryLabel": "Sentry Logging",
+        "sentryHint": "Send anonymous logs to help us improve ReVanced Manager",
+        "restartAppForChanges": "Restart the app to apply changes",
+        "deleteKeystoreLabel": "Delete keystore",
+        "deleteKeystoreHint": "Delete the keystore used to sign the app",
+        "deletedKeystore": "Keystore deleted",
+        "deleteTempDirLabel": "Delete temp directory",
+        "deleteTempDirHint": "Delete the temporary directory used to store temporary files",
+        "deletedTempDir": "Temp directory deleted",
+        "deleteLogsLabel": "Delete logs",
+        "deleteLogsHint": "Delete collected manager logs",
+        "deletedLogs": "Logs deleted"
     },
     "appInfoView": {
         "widgetTitle": "App Info",
@@ -142,13 +162,15 @@
         "rootDialogTitle": "Error",
         "rootDialogText": "App was installed with root mode enabled but currently root mode is disabled.\nPlease enable root mode first.",
         "packageNameLabel": "Package Name",
+        "originalPackageNameLabel": "Original Package Name",
         "installTypeLabel": "Installation Type",
         "rootTypeLabel": "Root",
         "nonRootTypeLabel": "Non-root",
         "patchedDateLabel": "Patched Date",
         "patchedDateHint": "{date} at {time}",
         "appliedPatchesLabel": "Applied Patches",
-        "appliedPatchesHint": "{quantity} applied patches"
+        "appliedPatchesHint": "{quantity} applied patches",
+        "updateNotImplemented": "Update functionality not implemented yet"
     },
     "contributorsView": {
         "widgetTitle": "Contributors",
