@@ -16,6 +16,7 @@
         "patchedSubtitle": "パッチ適用済のアプリケーション",
         "updatesAvailable": "利用可能な更新",
         "noUpdates": "更新はありません",
+        "WIP": "実装中",
         "noInstallations": "パッチ適用済のアプリケーションはインストールされていません",
         "installed": "インストール済",
         "updateDialogTitle": "アップデート",
@@ -27,6 +28,7 @@
         "errorDownloadMessage": "アップデートをダウンロード出来ませんでした",
         "errorInstallMessage": "アップデートをインストール出来ませんでした",
         "noConnection": "ネットワーク接続がありません"
+		"updatesDisabled": "Updating a patched app is currently disabled. Repatch the app again."
     },
     "applicationItem": {
         "patchButton": "適用",
@@ -82,7 +84,8 @@
     "patchItem": {
         "unsupportedWarningButton": "サポートされていないバージョン",
         "unsupportedDialogTitle": "警告",
-        "unsupportedDialogText": "このパッチを選択すると、パッチの適用に失敗することがあります。\n\nアプリバージョン: {packageVersion}\n現在サポートされているバージョン:\n{supportedVersions}"
+        "unsupportedDialogText": "このパッチを選択すると、パッチの適用に失敗することがあります。\n\nアプリバージョン: {packageVersion}\n現在サポートされているバージョン:\n{supportedVersions}",
+        "unsupportedPatchVersion": "このアプリのバージョンでは、指定したパッチはサポートされていません。設定から試験的なパッチを有効にしてください。"
     },
     "installerView": {
         "widgetTitle": "インストーラー",
@@ -93,6 +96,7 @@
         "notificationTitle": "ReVanced Managerはパッチを適用しています",
         "notificationText": "タップするとインストーラーに戻ります",
         "shareApkMenuOption": "APKを共有",
+        "exportApkMenuOption": "APKをエクスポート",
         "shareLogMenuOption": "logを共有",
         "installErrorDialogTitle": "エラー",
         "installErrorDialogText1": "現在選択されているパッチでは、ルートインストールはできません。\nアプリを再パッチするか、非ルートインストールを選択してください。",
@@ -106,6 +110,7 @@
         "teamSectionTitle": "チーム",
         "infoSectionTitle": "情報",
         "advancedSectionTitle": "高度な機能",
+        "logsSectionTitle": "ログ",
         "darkThemeLabel": "ダークモード",
         "darkThemeHint": "ダークサイドへようこそ",
         "dynamicThemeLabel": "Material You",
@@ -130,8 +135,23 @@
         "apiURLLabel": "API URL",
         "apiURLHint": "カスタムAPI URLの設定",
         "selectApiURL": "URLを選択",
+        "experimentalPatchesLabel": "試験的なパッチサポート",
+        "experimentalPatchesHint": "どのバージョンでも未対応のパッチを適用できるようにする",
+        "enabledExperimentalPatches": "試験的なパッチが有効",
         "aboutLabel": "詳細",
-        "snackbarMessage": "クリップボードにコピーしました"
+        "snackbarMessage": "クリップボードにコピーしました",
+        "sentryLabel": "Sentryのログ収集",
+        "sentryHint": "ReVanced Managerの改善のため、匿名でログを送信する",
+        "restartAppForChanges": "アプリを再起動して変更を適用",
+        "deleteKeystoreLabel": "キーストアを削除",
+        "deleteKeystoreHint": "アプリの署名に使用したキーストアを削除する",
+        "deletedKeystore": "キーストアを削除しました",
+        "deleteTempDirLabel": "一時ディレクトリを削除する",
+        "deleteTempDirHint": "一時ファイルを保存するディレクトリを削除します",
+        "deletedTempDir": "一時フォルダを削除しました",
+        "deleteLogsLabel": "ログを削除する",
+        "deleteLogsHint": "収集されたmanagerのログを削除します",
+        "deletedLogs": "ログを削除しました。"
     },
     "appInfoView": {
         "widgetTitle": "アプリ情報",
@@ -143,13 +163,15 @@
         "rootDialogTitle": "エラー",
         "rootDialogText": "アプリは端末がルート化された状態でインストールされましたが、現在はルート化が解除されているようです。\n再度、ルート化してから実行してください。",
         "packageNameLabel": "パッケージ名",
+        "originalPackageNameLabel": "オリジナルのパッケージ名",
         "installTypeLabel": "インストールタイプ",
         "rootTypeLabel": "ルート",
         "nonRootTypeLabel": "非ルート",
         "patchedDateLabel": "パッチ適用日",
         "patchedDateHint": "{date} の {time}",
         "appliedPatchesLabel": "適用済のパッチ",
-        "appliedPatchesHint": "{quantity} 個の適用済パッチ"
+        "appliedPatchesHint": "{quantity} 個の適用済パッチ",
+        "updateNotImplemented": "アップデート機能は未実装です。"
     },
     "contributorsView": {
         "widgetTitle": "貢献者",
