@@ -27,7 +27,7 @@
         "installingMessage": "アップデートをインストール中...",
         "errorDownloadMessage": "アップデートをダウンロード出来ませんでした",
         "errorInstallMessage": "アップデートをインストール出来ませんでした",
-        "noConnection": "ネットワーク接続がありません"
+        "noConnection": "ネットワーク接続がありません",
 		"updatesDisabled": "Updating a patched app is currently disabled. Repatch the app again."
     },
     "applicationItem": {
@@ -121,8 +121,8 @@
         "JapaneseOption": "日本語",
         "sourcesLabel": "ソース",
         "sourcesLabelHint": "カスタムソースの設定",
-        "orgPatchesLabel" : "パッチ提供元",
-        "sourcesPatchesLabel" : "パッチのソース",
+        "orgPatchesLabel": "パッチ提供元",
+        "sourcesPatchesLabel": "パッチのソース",
         "orgIntegrationsLabel": "Integrationsの提供元",
         "sourcesIntegrationsLabel": "Integrationsのソース",
         "sourcesResetDialogTitle": "リセット",
@@ -136,7 +136,7 @@
         "apiURLHint": "カスタムAPI URLの設定",
         "selectApiURL": "URLを選択",
         "experimentalPatchesLabel": "試験的なパッチサポート",
-        "experimentalPatchesHint": "どのバージョンでも未対応のパッチを適用できるようにする",
+        "experimentalPatchesHint": "どのバージョンでも未対応のパッチを適用できるようにします",
         "enabledExperimentalPatches": "試験的なパッチが有効",
         "aboutLabel": "詳細",
         "snackbarMessage": "クリップボードにコピーしました",
@@ -144,7 +144,7 @@
         "sentryHint": "ReVanced Managerの改善のため、匿名でログを送信する",
         "restartAppForChanges": "アプリを再起動して変更を適用",
         "deleteKeystoreLabel": "キーストアを削除",
-        "deleteKeystoreHint": "アプリの署名に使用したキーストアを削除する",
+        "deleteKeystoreHint": "アプリの署名に使用したキーストアを削除します",
         "deletedKeystore": "キーストアを削除しました",
         "deleteTempDirLabel": "一時ディレクトリを削除する",
         "deleteTempDirHint": "一時ファイルを保存するディレクトリを削除します",
